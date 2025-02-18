@@ -24,6 +24,7 @@ export default function Hero() {
         width={0}
         height={0}
         className='w-full h-auto'
+        priority
       />
       <div 
         className={`

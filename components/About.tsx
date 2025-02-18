@@ -15,7 +15,7 @@ interface FeatureSectionProps {
   imgFirst?: boolean;
 }
 
-function FeatureSection ({imgSrc, imgAlt, title, description, imgFirst = true}: FeatureSectionProps) {
+function AboutSection ({imgSrc, imgAlt, title, description, imgFirst = true}: FeatureSectionProps) {
   return (
     <div
       className={`
@@ -51,18 +51,18 @@ function FeatureSection ({imgSrc, imgAlt, title, description, imgFirst = true}: 
   )
 }
 
-export default function Features() {
+export default function About() {
   const {currSize} = useDeviceSize();
 
   return (
     <div className='w-full flex flex-col'>
-      <FeatureSection
+      <AboutSection
         imgSrc={`/assets/home/${currSize}/beautiful-stories.jpg`}
         imgAlt='laptop with an edited beautiful photo'
         title='Beautiful Stories Every Time'
         description="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
       />
-      <FeatureSection
+      <AboutSection
         imgSrc={`/assets/home/${currSize}/designed-for-everyone.jpg`}
         imgAlt='man holding a powerful camera'
         title='Designed for everyone'

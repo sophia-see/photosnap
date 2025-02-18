@@ -1,16 +1,18 @@
 "use client"
 
 
-import Features from "@/components/Features";
+import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/home/Hero";
+import Stories from "@/components/Stories";
 
 export default function Home() {
   return (
     <div className="">
       <Header />
       <Hero />
-      <Features />
+      <About />
+      <Stories />
     </div>
   );
 }

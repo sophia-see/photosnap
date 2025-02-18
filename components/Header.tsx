@@ -13,6 +13,7 @@ export default function Header() {
         width={20}
         height={6}
         alt='burger icon'
+        priority
       />
     </div>
   )
