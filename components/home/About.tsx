@@ -28,12 +28,13 @@ function AboutSection ({imgSrc, imgAlt, title, description, imgFirst = true}: Fe
         sizes='100vw'
         width={0}
         height={0}
-        className={`w-full h-auto object-cover object-center ${imgFirst ? "order-first" : "order-last"}`}
+        className={`w-full h-auto md:max-h-[650px] object-cover object-center ${imgFirst ? "order-first" : "order-last"}`}
       />
       <div 
         className={`
           md:order-first md:flex-shrink-0
-          w-full md:w-[495px] lg:w-[565px] xl:w-[610px]
+          w-full md:w-[495px] lg:w-[565px] xl:w-[610px] 2xl:w-[40%]
+          md:max-h-[650px]
           bg-white text-pure-black 
           py-[72px] px-[33px] md:py-[173px] md:px-[54px] lg:px-[72px] xl:px-[112px]
           flex flex-col items-start

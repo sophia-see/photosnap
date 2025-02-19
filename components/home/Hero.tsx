@@ -23,14 +23,15 @@ export default function Hero() {
         sizes='100vw'
         width={0}
         height={0}
-        className='w-full h-auto object-cover object-center'
+        className='w-full h-auto object-cover object-center md:max-h-[650px]'
         priority
       />
       <div 
         className={`
           md:order-first md:flex-shrink-0
           relative
-          w-full md:w-[495px] lg:w-[565px] xl:w-[610px]
+          w-full md:w-[495px] lg:w-[565px] xl:w-[610px] 2xl:w-[40%]
+          md:max-h-[650px]
           bg-pure-black text-white 
           py-[72px] px-[33px] md:py-[173px] md:px-[54px] lg:px-[72px] xl:px-[112px]
           flex flex-col items-start
