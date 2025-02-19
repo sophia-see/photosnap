@@ -23,7 +23,7 @@ export default function Feature(props: FeatureProps) {
   return (
     <div 
       className={`
-        w-full
+        w-full md:max-w-[457px] lg:max-w-[350px]
         flex flex-col gap-[48px] items-center justify-center
         
       `}

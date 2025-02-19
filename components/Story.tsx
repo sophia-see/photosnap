@@ -30,6 +30,9 @@ export default function Story(props: StoryProps) {
         relative
         h-[375px] md:h-[500px]
         w-full md:w-1/2 lg:w-1/4
+        transition duration-300
+        lg:hover:translate-y-[-10%]
+        cursor-pointer
       `}
     >
       <Image
