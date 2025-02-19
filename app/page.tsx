@@ -57,8 +57,7 @@ const FEATURES: FeatureType[] = [
 
 export default function Home() {
   return (
-    <div className="">
-      <Header />
+    <div>
       <Hero />
       <About />
       <Stories stories={STORIES} isHomePage={true}/>

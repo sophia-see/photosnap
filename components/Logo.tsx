@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 export default function Logo() {
@@ -13,6 +14,9 @@ export default function Logo() {
       className='w-auto h-auto'
       alt='Photosnap logo'
       priority
+      onClick={() => {
+        redirect("/")
+      }}
     />
   )
 }

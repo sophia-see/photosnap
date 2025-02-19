@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -22,7 +24,9 @@ export default function RootLayout({
         className={`${dmSans.className} antialiased`}
       >
         <div className="w-full h-full min-w-screen min-h-screen">
+          <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
