@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <div
       className={`
-        flex flex-col 
+        flex flex-col md:flex-row
       `}
     >
       <Image
@@ -23,25 +23,26 @@ export default function Hero() {
         sizes='100vw'
         width={0}
         height={0}
-        className='w-full h-auto'
+        className='w-full h-auto object-cover object-center'
         priority
       />
       <div 
         className={`
-          relative 
-          w-full 
+          md:order-first md:flex-shrink-0
+          relative
+          w-full md:w-[495px] lg:w-[595px] xl:w-[695px]
           bg-pure-black text-white 
-          py-[72px] px-[33px]
+          py-[72px] px-[33px] md:py-[173px] md:px-[54px] lg:px-[72px] xl:px-[112px]
           flex flex-col items-start
         `}
       >
-        <AccentLine />
+        <AccentLine className={`md:w-[6px] md:h-[304px] md:left-0 md:translate-y-1/2`}/>
         <SectionTitle 
           text='Create and share your photo stories.' 
         />
         <SectionDescription 
           text='Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.' 
-          className='mt-[16px] mb-[23px]'
+          className='mt-[16px] mb-[23px] md:mt-[21px] md:mb-[48px]'
         />
         <Button variant='secondary' mode='dark'>Get an invite</Button>
       </div>
