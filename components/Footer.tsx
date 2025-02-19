@@ -55,7 +55,7 @@ function NavLinks ({className}: {className?: string}) {
   return (
     <ul className={`flex flex-col justify-center items-center md:flex-row md:gap-[26px] md:my-[32px] ${className || ""}`}>
       {LINKS.map(link => (
-        <Link href={link.path} className='py-[10px] lg:py-0'>
+        <Link href={link.path} className='py-[10px] lg:py-0' key={link.name}>
           <li className='uppercase font-bold text-[12px] tracking-[2px] hover:opacity-30 transition delay-50'>
             {link.name}
           </li>
