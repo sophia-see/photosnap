@@ -7,11 +7,17 @@ import useDeviceSize from '@/hooks/use-device-size'
 import Divider from './Divider'
 import Button from './Button'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname();
   const { isMobile } = useDeviceSize();
   const [isOpen, setIsOpen] = React.useState(false);
   const headerMenuRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    setIsOpen(false);
+  }, [pathname])
 
   React.useEffect(() => {
     if (isOpen && isMobile) {
@@ -47,7 +53,9 @@ export default function Header() {
         <Image
           src={`/assets/shared/mobile/${isOpen ? "close" : "menu"}.svg`}
           width={20}
-          height={6}
+          height={20}
+          className='w-auto h-auto'
+          sizes='100vw'
           alt={`${isOpen ? "close" : "menu"} icon`}
           priority
           onClick={() => {
@@ -59,17 +67,17 @@ export default function Header() {
           <div className='absolute bottom-0 left-0 right-0 translate-y-full z-10 h-screen bg-[rgba(0,0,0,.5)]'>
             <div className='p-[32px] w-full bg-white opacity-100 flex flex-col items-center text-center justify-center gap-5'>
               <ul className='w-full flex flex-col items-center text-center justify-center'>
-                <Link className='w-full h-full' href={"/stories"} onClick={() => setIsOpen(false)}>
+                <Link className='w-full h-full' href={"/stories"}>
                   <li className='w-full py-[10px]'>
                       Stories
                   </li>
                 </Link>
-                <Link className='w-full h-full' href={"/features"} onClick={() => setIsOpen(false)}>
+                <Link className='w-full h-full' href={"/features"}>
                   <li className='w-full py-[10px]'>
                       Features
                   </li>
                 </Link>
-                <Link className='w-full h-full' href={"/pricing"} onClick={() => setIsOpen(false)}>
+                <Link className='w-full h-full' href={"/pricing"}>
                   <li className='w-full py-[10px]'>
                       Pricing
                   </li>
