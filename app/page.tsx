@@ -2,7 +2,6 @@
 
 
 import About from "@/components/home/About";
-import Header from "@/components/Header";
 import Hero from "@/components/home/Hero";
 import Stories, { StoryType } from "@/components/Stories";
 import Features, { FeatureType } from "@/components/Features";
