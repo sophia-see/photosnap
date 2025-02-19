@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import React from 'react'
-import SectionTitle from './SectionTitle';
-import SectionDescription from './SectionDescription';
-import Button from './Button';
+import SectionTitle from '../SectionTitle';
+import SectionDescription from '../SectionDescription';
+import Button from '../Button';
 import useDeviceSize from '@/hooks/use-device-size';
 
 interface FeatureSectionProps {
