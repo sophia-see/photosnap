@@ -9,6 +9,7 @@ export default function SectionTitle({text, className}: SectionTitleProps) {
   return (
     <div 
       className={`
+        w-full
         uppercase 
         font-bold 
         text-[32px] md:text-[40px]

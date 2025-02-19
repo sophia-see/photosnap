@@ -19,7 +19,7 @@ function AboutSection ({imgSrc, imgAlt, title, description, imgFirst = true}: Fe
   return (
     <div
       className={`
-        flex flex-col 
+        w-full flex flex-col md:flex-row
       `}
     >
       <Image
@@ -28,14 +28,16 @@ function AboutSection ({imgSrc, imgAlt, title, description, imgFirst = true}: Fe
         sizes='100vw'
         width={0}
         height={0}
-        className='w-full h-auto'
+        className={`w-full h-auto object-cover object-center ${imgFirst ? "order-first" : "order-last"}`}
       />
       <div 
         className={`
-          w-full 
+          md:order-first md:flex-shrink-0
+          w-full md:w-[495px] lg:w-[565px] xl:w-[610px]
           bg-white text-pure-black 
-          py-[72px] px-[33px]
+          py-[72px] px-[33px] md:py-[173px] md:px-[54px] lg:px-[72px] xl:px-[112px]
           flex flex-col items-start
+          ${imgFirst ? "md:order-last" : "md:order-first"}
         `}
       >
         <SectionTitle 
@@ -67,6 +69,7 @@ export default function About() {
         imgAlt='man holding a powerful camera'
         title='Designed for everyone'
         description="Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it."
+        imgFirst={false}
       />
     </div>
   )

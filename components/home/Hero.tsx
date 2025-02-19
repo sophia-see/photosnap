@@ -30,7 +30,7 @@ export default function Hero() {
         className={`
           md:order-first md:flex-shrink-0
           relative
-          w-full md:w-[495px] lg:w-[595px] xl:w-[695px]
+          w-full md:w-[495px] lg:w-[565px] xl:w-[610px]
           bg-pure-black text-white 
           py-[72px] px-[33px] md:py-[173px] md:px-[54px] lg:px-[72px] xl:px-[112px]
           flex flex-col items-start
