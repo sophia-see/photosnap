@@ -28,7 +28,8 @@ export default function Story(props: StoryProps) {
     <div 
       className={`
         relative
-        h-[375px] w-full  
+        h-[375px] md:h-[500px]
+        w-full md:w-1/2 lg:w-1/4
       `}
     >
       <Image
@@ -37,7 +38,7 @@ export default function Story(props: StoryProps) {
         width={0}
         height={0}
         sizes='100vw'
-        className='w-full h-full'
+        className='w-full h-full object-cover object-center'
       />
       <div className='absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,.6612)]'>
 

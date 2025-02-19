@@ -19,8 +19,7 @@ export default function Stories({ stories, isHomePage = false }: StoriesProps) {
   const {currSize} = useDeviceSize();
 
   return (
-    <div className='w-full'>
-      
+    <div className='w-full flex flex-col md:flex-row md:flex-wrap'>
       {stories.map((story, index) => (
         <Story
           isHomePage={isHomePage}
