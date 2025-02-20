@@ -8,6 +8,7 @@ interface FeatureProps {
   imgAlt: string;
   name: string;
   description: string;
+  isHomePage?: boolean;
 }
 
 export default function Feature(props: FeatureProps) {
@@ -16,12 +17,13 @@ export default function Feature(props: FeatureProps) {
     imgAlt,
     name,
     description,
+    isHomePage = false
   } = props;
 
   return (
     <div 
       className={`
-        w-full md:max-w-[457px] lg:max-w-[350px]
+        w-full ${isHomePage ? "md:max-w-[457px] lg:max-w-[350px]" : "md:w-[340px] 2xl:w-[350px]"}
         flex flex-col gap-[48px] items-center justify-center
         
       `}

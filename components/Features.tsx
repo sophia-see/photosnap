@@ -16,7 +16,14 @@ interface StoriesProps {
 export default function Features({ features, isHomePage = false }: StoriesProps) {
 
   return (
-    <div className='w-full px-[33px] py-[80px] flex flex-col gap-[56px] items-center justify-center lg:flex-row lg:gap-[30px]'>
+    <div 
+      className={`
+        w-full 
+        ${isHomePage ? "px-[33px] py-[80px]" : "px-[32px] py-[64px] md:px-[38px] md:py-[112px] lg:px-[48px] lg:py-[112px] 2xl:px-[165px] xl:py-[160px]"}
+        flex flex-col gap-[56px] items-center justify-center 
+        ${isHomePage ? "lg:flex-row lg:gap-[30px]" : "md:flex-row md:gap-x-[12px] md:gap-y-[72px]  lg:gap-[30px] md:flex-wrap md:items-end"} 
+      `}
+    >
       {features.map((feature, index) => (
         <Feature
           imgSrc={`/assets/features/desktop/${feature.imgName}.svg`}
@@ -24,6 +31,7 @@ export default function Features({ features, isHomePage = false }: StoriesProps)
           name={feature.name}
           description={feature.description}
           key={`${index}`}
+          isHomePage={isHomePage}
         />
       ))}
     </div>
