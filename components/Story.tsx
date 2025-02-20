@@ -39,9 +39,8 @@ export default function Story(props: StoryProps) {
       <Image
         src={imgSrc}
         alt={imgAlt}
-        width={0}
-        height={0}
-        sizes='100vw'
+        fill
+        loading='eager'
         className='w-full h-full object-cover object-center'
       />
       <div className='absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,.6612)]'>
@@ -51,11 +50,14 @@ export default function Story(props: StoryProps) {
       <div
         className={`
           absolute bottom-0 left-0 right-0
-          ${isHomePage ? "mb-10 mx-[33px]" : ""}
+          ${isHomePage ? "mb-10 mx-[33px]" : "mb-[40px] mx-[42px] lg:mx-[40px]"}
           text-white
         `}
       >
         <div className='flex flex-col gap-1'>
+          {date && (
+            <div className='text-[13px]'>{date}</div> 
+          )}
           <div className='font-bold text-[18px] leading-[25px]'>{name}</div> 
           <div className='text-[13px]'>by {author}</div> 
         </div>

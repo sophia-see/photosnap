@@ -11,7 +11,7 @@ export default function Logo({isDarkMode = false}: {isDarkMode?: boolean}) {
       width={0}
       height={0}
       sizes='100vw'
-      className='w-auto h-auto'
+      className='w-auto h-auto cursor-pointer'
       alt='Photosnap logo'
       priority
       onClick={() => {
