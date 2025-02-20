@@ -1,6 +1,5 @@
 "use client"
 
-
 import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
 import Stories, { StoryType } from "@/components/Stories";
