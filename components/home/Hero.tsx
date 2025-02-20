@@ -37,7 +37,7 @@ export default function Hero() {
           flex flex-col items-start
         `}
       >
-        <AccentLine className={`md:w-[6px] md:h-[304px] md:left-0 md:translate-y-1/2`}/>
+        <AccentLine className={`absolute top-0 md:w-[6px] md:h-[304px] md:left-0 md:translate-y-1/2`}/>
         <SectionTitle 
           text='Create and share your photo stories.' 
         />

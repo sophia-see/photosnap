@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React from 'react'
 import Button from './Button';
 import Divider from './Divider';
+import AccentLine from './AccentLine';
 
 interface StoryProps {
   imgSrc: string;
@@ -27,7 +28,7 @@ export default function Story(props: StoryProps) {
   return (
     <div 
       className={`
-        relative
+        relative group
         h-[375px] md:h-[500px]
         w-full md:w-1/2 lg:w-1/4
         transition duration-500
@@ -46,6 +47,7 @@ export default function Story(props: StoryProps) {
       <div className='absolute inset-0 bg-gradient-to-b from-transparent to-[rgba(0,0,0,.6612)]'>
 
       </div>
+      <AccentLine className='absolute bottom-0 left-0 right-0 w-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100'/>
       <div
         className={`
           absolute bottom-0 left-0 right-0
