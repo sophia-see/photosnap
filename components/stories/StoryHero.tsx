@@ -69,7 +69,7 @@ export default function StoryHero() {
               opacity-0
               lg:group-hover:opacity-50 
               transition duration-300
-              absolute bottom-0 left-[-112px] w-[720px] h-[650px] 
+              absolute bottom-0 lg:left-[-112px] lg:w-[720px] lg:h-[650px] 
               bg-[radial-gradient(circle_at_0%_100%,_rgba(255,197,147,0.6)_0%,_rgba(188,113,152,0.2)_50%,_rgba(90,119,255,0)_80%)] 
               pointer-events-none
             `}
