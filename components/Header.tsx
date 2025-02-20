@@ -113,7 +113,7 @@ export default function Header() {
                       Pricing
                   </li>
                 </Link>
-                <Divider className='bg-black mt-[10px] mb-[20px]'/> 
+                <Divider className='bg-black mt-[10px] mb-[20px] opacity-25'/> 
                 <Button className='w-full'>Get an invite</Button>
               </ul>
             </div>

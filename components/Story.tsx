@@ -61,7 +61,7 @@ export default function Story(props: StoryProps) {
           <div className='font-bold text-[18px] leading-[25px]'>{name}</div> 
           <div className='text-[13px]'>by {author}</div> 
         </div>
-        <Divider className='mt-[16px] mb-[20px]'/>
+        <Divider className='mt-[16px] mb-[20px] bg-white opacity-25'/>
         <Button variant='secondary' mode='dark' className='w-full justify-between'>Read Story</Button>
       </div>
     </div>
