@@ -1,5 +1,5 @@
 import Features, { FeatureType } from '@/components/Features'
-import Action from '@/components/features/Action'
+import Action from '@/components/Action'
 import FeaturesHero from '@/components/features/FeaturesHero'
 import React from 'react'
 
