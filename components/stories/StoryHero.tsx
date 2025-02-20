@@ -52,7 +52,7 @@ export default function StoryHero() {
           flex flex-col items-start
         `}
       >
-        <div className='uppercase font-bold text-[12px] tracking-[2px] mb-[16px] md:mb-[24px]'>Last month's featured story</div>
+        <div className='uppercase font-bold text-[12px] tracking-[2px] mb-[16px] md:mb-[24px]'>Last month&apos;s featured story</div>
         <SectionTitle 
           text='Hazy Full Moon of Appalachia' 
           className='mb-[56px] md:mb-[16px]'

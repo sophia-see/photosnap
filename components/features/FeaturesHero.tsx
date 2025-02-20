@@ -4,7 +4,6 @@ import useDeviceSize from '@/hooks/use-device-size'
 import Image from 'next/image'
 import React from 'react'
 import SectionTitle from '../SectionTitle';
-import Button from '../Button';
 import SectionDescription from '../SectionDescription';
 import AccentLine from '../AccentLine';
 

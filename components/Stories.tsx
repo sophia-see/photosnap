@@ -29,7 +29,7 @@ export default function Stories({ stories, isHomePage = false }: StoriesProps) {
 
   return (
     <div className='w-full flex flex-col md:flex-row md:flex-wrap'>
-      {formattedStories.map((story, index) => (
+      {formattedStories.map((story) => (
         <Story
           isHomePage={isHomePage}
           imgSrc={story.imgSrc}
