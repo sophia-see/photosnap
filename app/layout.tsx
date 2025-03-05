@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.className} antialiased`}
       >
-        <div className="w-full h-full min-w-screen min-h-screen">
+        <div className="w-full h-full min-w-screen min-h-screen xl:max-w-[1600px] xl:mx-auto">
           <Header />
           {children}
           <Footer />
